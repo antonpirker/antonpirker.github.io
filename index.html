@@ -1,20 +1,103 @@
-<html>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-	<title></title>
-	<style>
-		body {
-			background: #333;
-			color: #fff;
-			font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
-		}
-		a {
-			color: #fff;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Pirker</title>
+    <style>
+        body {
+            background: #260112;
+            color: #fff;
+            font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;             
+        }
+        a {
+            color: #fff;
+        }
+        h2 {
+            margin-top: 2em;
+        }
+        .headline-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            max-width: 32em;
+        }
+        pre {
+            animation: blink 4s infinite alternate;
+            -webkit-animation: blink 4s infinite alternate;
+            color: #ffd9e2;
+            text-shadow: 0 0 0 transparent, 
+                0 0 10px #ff003c, 
+                0 0 20px rgba(255, 0, 60, 0.5), 
+                0 0 40px #ff003c, 
+                0 0 100px #ff003c, 
+                0 0 200px #ff003c, 
+                0 0 300px #ff003c, 
+                0 0 500px #ff003c, 
+                0 0 1000px #ff003c;
+        }
+        @-webkit-keyframes blink {
+            40% { opacity: 1; }
+            42% { opacity: 0.8; }
+            43% { opacity: 1; }
+            45% { opacity: 0.2; }
+            46% { opacity: 1; }
+        }
+        @keyframes blink {
+            40% { opacity: 1; }
+            42% { opacity: 0.8; }
+            43% { opacity: 1; }
+            45% { opacity: 0.2; }
+            46% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-Hallo, my name is Anton.
-<br/><br/>
-<a href="http://www.anton-pirker.at">anton-pirker.at</a> &bull; <a href="mailto:anton@ignaz.at">anton@ignaz.at</a> &bull; <a href="https://at.linkedin.com/pub/anton-pirker/a/136/623/en">LinkedIn</a> &bull; <a href="https://www.xing.com/profile/Anton_Pirker">Xing</a>
+    <div>
+        <!--
+            TODO: 
+                - coolere schrift für text und links
+        -->
+
+        <div class="headline-container">
+            <pre>
+ _______         __                
+|   _   |.-----.|  |_.-----.-----. 
+|       ||     ||   _|  _  |     | 
+|___|___||__|__||____|_____|__|__| 
+            </pre>
+            <pre>
+ ______ __        __               
+|   __ \__|.----.|  |--.-----.----.
+|    __/  ||   _||    <|  -__|   _|
+|___|  |__||__|  |__|__|_____|__|  
+            </pre>
+        </div>
+        
+        <p>
+            Software maker. Python. Django. Docker.
+        </p>
+
+        <h2>On the web</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/antonpirker/" target="_blank">LinkedIn</a> &bull; <a href="https://github.com/antonpirker/" target="_blank">Github</a> &bull; <a href="https://twitter.com/pirkeranton" target="_blank">Twitter<a>
+        </p>
+
+        <h2>Projects</h2>
+        <p>
+            <a href="https://codefrog.io" target="_blank">Codefrog</a> 
+        </p>
+
+        <h2>Vat id</h2>
+        <p>
+           ATU62425806 
+        </p>
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:anton@ignaz.at">anton@ignaz.at</a>
+        </p>
+    </div>
 </body>
 </html>
+
