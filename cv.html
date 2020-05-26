@@ -54,6 +54,22 @@
         pre a {
             text-decoration: none;
         }
+        @media print {
+            .no-print, .no-print * {
+                display: none !important;
+            }
+            body {
+                background: #fff;
+                color: #000;
+                font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+            }
+
+        }
+        @media screen {
+            .no-screen, .no-screen * {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,7 +79,7 @@
                 - coolere schrift für text und links
         -->
 
-        <div class="headline-container">            
+        <div class="headline-container no-print">
             <pre>
                 <a href="index.html">
  _______         __                
@@ -82,9 +98,13 @@
             </pre>
         </div>
 
-        <a href="index.html">&lsaquo;back</a>
+        <div class="no-screen">
+            <h1>Anton Pirker - CV</h1>
+        </div>
+
+        <a href="index.html" class="no-print">&lsaquo;back</a>
         
-        <h1>CV / Résumé</h1>
+        <h1 class="no-print">CV / Résumé</h1>
         <p>
             Senior software engineer. 
         </p>
@@ -96,16 +116,18 @@
             Great at remote work and excellent in written and spoken communication. Good in communicating complex technical topics to non-technical people.
         </p>
         <p>
-            Likes to implement a experience in a team that lets everyone thrive.
+            Likes to shape a experience in a team that lets everyone thrive.
         </p>
-        <p>
+        <p class="no-print">
             &nbsp;
         </p>
-        <p>
+        <p class="no-print">
             <a href="https://www.linkedin.com/in/antonpirker/" target="_blank">LinkedIn</a> &bull; <a href="https://github.com/antonpirker/" target="_blank">Github</a> &bull; <a href="https://twitter.com/pirkeranton" target="_blank">Twitter<a>
         </p>
+        <p class="no-print">
+            &nbsp;
+        </p>
 
-        <br/><br/>
         <h2>Experience</h2>
 
         <p>
@@ -186,16 +208,20 @@
             1995 - 1999<br/>
             where I learned (among other things) C, C++ and Assembler ;)
         </p>
+        <p class="no-print">
+            &nbsp;
+        </p>
 
 
-        <br/><br/>
         <h2>Volunteer Experience:</h2>
         <p>
             Organizer of Django Meetup Vienna<br/>
             Jun 2014 - now
         </p>
+        <p class="no-print">
+            &nbsp;
+        </p>
 
-        <br/><br/>
         <h2>Skills</h2><!-- This was updated May 2020 -->
         <p>
             <ul>
@@ -215,19 +241,24 @@
                 <li>Amazon Web Servies (AWS): 2 years</li>
             </ul>
         </p>
+        <p class="no-print">
+            &nbsp;
+        </p>
 
-        <br/><br/>
         <h2>Contact</h2>
         <p>
             <a href="mailto:anton@ignaz.at">anton@ignaz.at</a>
         </p>
-
         <p>
+            <a href="https://anton-pirker.at" class="no-screen">https://anton-pirker.at</a>
+        </p>
+
+        <p class="no-print">
             &nbsp;
         </p>
-        <a href="index.html">&lsaquo;back</a>
+        <a href="index.html" class="no-print">&lsaquo;back</a>
 
-        <p style="text-align: center; margin: 7em 0 3em 0;">
+        <p style="text-align: center; margin: 4em 0 3em 0;">
             &spadesuit;
         </p>
     </div>

@@ -54,6 +54,11 @@
         pre a {
             text-decoration: none;
         }
+        @media print {
+            .no-print, .no-print * {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -104,9 +109,9 @@
         <p>
             <a href="mailto:anton@ignaz.at">anton@ignaz.at</a>
         </p>
-        <p style="text-align: center; margin: 7em 0 3em 0;">
+        <p style="text-align: center; margin: 4em 0 3em 0;">
             &spadesuit;
-        </p>        
+        </p>
     </div>
 </body>
 </html>
